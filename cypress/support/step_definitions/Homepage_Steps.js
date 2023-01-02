@@ -1,6 +1,10 @@
-const { Given } = require("@badeball/cypress-cucumber-preprocessor");
+// <reference types="cypress" />
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
+Given(`I navigate tot the webdrivenuniversity homepage`, () => {
+    return "pending";
+});
 
-Given(`I navigate to the webdrivenuniversity homepage`, () => {
-
-})
+When(`I click on the contact us button`, () => {
+    return "pending";
+});

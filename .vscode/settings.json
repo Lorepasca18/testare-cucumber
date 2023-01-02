@@ -1,0 +1,7 @@
+{
+    "cucumberautocomplete.customParameters": [
+    ],
+    "cucumberautocomplete.steps": [
+        "cypress/support/step_definitions/*.js"
+    ]
+}
