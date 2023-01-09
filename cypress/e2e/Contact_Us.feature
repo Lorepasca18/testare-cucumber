@@ -1,8 +1,10 @@
 Feature: WebdriverUniversity - Contact Us page
 
-    Scenario: Valid Contact Us Form Submission
+    Background: Pre condition
         Given I navigate tot the webdrivenuniversity homepage
         When I click on the contact us button
+
+    Scenario: Valid Contact Us Form Submission
         And I type a first name
         And I type a last name
         And I enter an email address
@@ -13,8 +15,6 @@ Feature: WebdriverUniversity - Contact Us page
 
 
     Scenario: Invalid Contact Us Form Submission
-        Given I navigate tot the webdrivenuniversity homepage
-        When I click on the contact us button
         And I type a first name
         And I type a last name
         And I type a comment
@@ -23,8 +23,6 @@ Feature: WebdriverUniversity - Contact Us page
 
 
     Scenario: Valid Contact Us Form Submission - Using specific data
-        Given I navigate tot the webdrivenuniversity homepage
-        When I click on the contact us button
         And I type a specific first name "Diana"
         And I type a specific last name "Pasca"
         And I type a specific email adress "diana.pasca@gmail.com"
@@ -32,5 +30,15 @@ Feature: WebdriverUniversity - Contact Us page
         And I click on the submit button
         Then I should be presented with a successful contact us submission
 
+    Scenario Outline: Validate contact us page 
+        And I type a first name <firstName> and a last name '<lastName>'
+        And I type a '<emailAdress>' and a comment '<comment>'
+        And I click on the submit button
+        Then I should be presented with header text '<message>'
 
+        Examples:
+            | firstName | lastName | emailAdress             | comment                 | message                      |
+            | John      | Jones    | john_jones@gmail.com    | Hello how are you?      | Thank You for your Message!  |
+            | Mia       | Carter   | Mia_carter123@gmail.com | Test123 Test 321        | Thank You for your Message!  |
+            | Grace     | Hudson   | grace_hudson            | Do you create websites? | Error: Invalid email address |
 
