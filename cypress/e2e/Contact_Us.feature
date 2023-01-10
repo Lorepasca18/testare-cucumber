@@ -1,7 +1,7 @@
 Feature: WebdriverUniversity - Contact Us page
 
     Background: Pre condition
-        Given I navigate tot the webdrivenuniversity homepage
+        Given I navigate to the webdrivenuniversity homepage
         When I click on the contact us button
 
     Scenario: Valid Contact Us Form Submission
