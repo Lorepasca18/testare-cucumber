@@ -17,3 +17,5 @@ When(`I click on the Login Portal button`, () => {
     cy.get("#login-portal").invoke("removeAttr", "target").click();
 
 });
+
+
