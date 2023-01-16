@@ -15,4 +15,3 @@ Feature: webdriveruniversity - Login Page
             | joe       | password12ewr | validation failed    |
 
 
-    

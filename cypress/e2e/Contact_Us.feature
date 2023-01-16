@@ -30,8 +30,8 @@ Feature: WebdriverUniversity - Contact Us page
         And I click on the submit button
         Then I should be presented with a successful contact us submission
 
-@smoke
-    Scenario Outline: Validate contact us page 
+    @smoke
+    Scenario Outline: Validate contact us page
         And I type a first name <firstName> and a last name '<lastName>'
         And I type a '<emailAdress>' and a comment '<comment>'
         And I click on the submit button
