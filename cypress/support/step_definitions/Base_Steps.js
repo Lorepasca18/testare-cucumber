@@ -22,3 +22,8 @@ After(() => {
 
 
 })
+
+When("I wait for {int} seconds", (seconds) =>{
+    cy.wait(seconds * 1000)
+
+})
