@@ -5,8 +5,9 @@ Feature: webdriveruniversity - Login Page
         When I wait for 0 seconds
 
     Scenario Outline: Validate valid & invalid login credentials
-        Given I navigate to the webdrivenuniversity homepage
-        When I click on the Login Portal button
+        #Given I navigate to the webdrivenuniversity homepage
+        #When I click on the Login Portal button
+        Given I navigate to the webdrivenuniversity login page
         And I type a Username <Username>
         And I type a Password <Password>
         And I click on the login button
