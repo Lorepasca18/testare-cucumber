@@ -10,5 +10,8 @@ class Base_PO {
         })
     }
 
+    getPageTitle() {
+        return cy.title();
+    }
 }
 export default Base_PO;
