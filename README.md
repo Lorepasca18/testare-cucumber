@@ -4,6 +4,6 @@ This project was created to automate acceptance testing for a web application. W
 
 We also used other tools and technologies in my project, including:
 
-1.Cypress Test Runner,
-2.Cucumber,
-3.Mocha and Chai.
+1.Cypress Test Runner
+2.Cucumber
+3.Mocha and Chai
